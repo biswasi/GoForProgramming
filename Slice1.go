@@ -20,9 +20,9 @@ fmt.Println("get:", input[2])
 fmt.Println("len:", len(input))
 input = append(input, "b")
 input = append(input, "a", "t")
-fmt.Println("Append --:", s)
+fmt.Println("Append --:", input)
 
-c := make([]string, len(s))
+c := make([]string, len(input))
 copy(c, input)
 fmt.Println("cpy:", c)
 l := input[2:5]
